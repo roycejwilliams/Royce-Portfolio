@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+  @font-face {
+    font-family: 'EverettMono'; /* Replace with a suitable font name */
+    src: url('./fonts/TWKEverettMono-Regular.otf') format('opentype'); /* Use OTF format */
+  }
+
+  @font-face {
+    font-family: 'Grotesk';
+    src: url('./fonts/BTGrotesk-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Chassi';
+    src: url('./fonts/ChassiTestL-Regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Felcha';
+    src: url('./fonts/FlechaBronzeaTestL-Regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'SulSans';
+    src: url('./fonts/SulSansTest-Medium.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Atica';
+    src: url('./fonts/AticaTest-Light.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Basilar';
+    src: url('./fonts/BasilarMonoTest-Regular.otf') format('opentype');
+  }
+
+  

@@ -15,16 +15,16 @@ const Portfolio = () => {
   return (
     <div >
       <div className='flex h-screen w-full bg-gradient-to-r from-rosered via-rosered to-white '> 
-        <div className='w-2/4 flex lg:flex-none justify-center items-center'>
-          <div className='w-2/3 h-full inline'>
-            <Navbar />
-            <ul className='w-auto h-3/4  flex flex-col items-center justify-center m-4'>
-              <Dropdown />
-            </ul>
+        <div className='w-1/2 h-full flex flex-col lg:flex-none justify-evenly items-center'>
+          <Navbar />
+          <div className='h-3/4 w-full flex'>
+              <ul className='lg:w-auto h-3/4 lg:flex hidden lg:flex-col items-center justify-center m-4'>
+                <Dropdown />
+              </ul>
+              <Sources />
           </div>
-            <Sources />
         </div>
-        <div className='w-2/4 flex justify-center items-center overflow-hidden h-screen bg-gradient-to-t from-rosered to-gray'>
+        <div className='w-1/2 flex justify-center items-center overflow-hidden h-screen bg-gradient-to-t from-rosered to-gray'>
             <Carousel />  
         </div>
       </div>

@@ -4,26 +4,17 @@ export default {
   theme: {
     screens: {
       sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
       md: "768px",
-      // => @media (min-width: 768px) { ... }
-
       lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
       xl: "1280px",
-      // => @media (min-width: 1280px) { ... }
-
       "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
     },
     extend: {
       fontFamily: {
         libre: ["Libre Baskerville"],
         outfit: ["'Outfit', sans-serif"],
         azeret: ["'Azeret Mono', sans-serif"],
-        clash: ["'Clash Display', sans-serif"], // Removed the extra semicolon here
+        clash: ["'Clash Display', sans-serif"],
       },
       height: {
         50: "50px",
@@ -41,6 +32,7 @@ export default {
       },
       fontSize: {
         xxs: "10px",
+        xxxs: "7px",
       },
       fontWeight: {
         light: "200",
@@ -52,8 +44,10 @@ export default {
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
         "slide-left": "slide-left 25s linear infinite",
-        "carousel-right": " ease-in linear",
-        "carousel-left": " ease-in linear",
+        "carousel-right": "carousel-right ease-in linear",
+        "carousel-left": "carousel-left ease-in linear",
+        gradient: "gradient 5s ease infinite",
+        swipe: "swipe ease 4s infinite",
       },
       keyframes: {
         "infinite-scroll": {
@@ -66,26 +60,41 @@ export default {
         },
         "carousel-left": {
           from: {
-            transform:
-              "translateX(-100px)" /* Start position (off-screen to the left) */,
+            transform: "translateX(-100px)",
             opacity: "0",
           },
           to: {
-            transform:
-              "translateX(0px)" /* End position (off-screen to the left) */,
+            transform: "translateX(0px)",
             opacity: "1",
           },
         },
         "carousel-right": {
           from: {
-            transform:
-              "translateX(100px)" /* Start position (off-screen to the right) */,
+            transform: "translateX(100px)",
             opacity: "0",
           },
           to: {
-            transform:
-              "translateX(0px)" /* End position (off-screen to the right) */,
+            transform: "translateX(0px)",
             opacity: "1",
+          },
+        },
+        gradient: {
+          "0%": {
+            "background-position": "200% left center",
+          },
+          "100%": {
+            "background-position": "200% right center",
+          },
+        },
+        swipe: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "50%": {
+            transform: "translateX(50px)",
+          },
+          "100%": {
+            transform: "translateX(0)",
           },
         },
       },

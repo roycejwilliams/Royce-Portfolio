@@ -26,11 +26,11 @@ const Carousel = () => {
 
     return (
       <div className='grid grid-cols justify-center items-center max-h-5xl '>
-        <div id='picture' className='flex flex-col flex-nowrap justify-center items-center gap-8 my-8 max-w-none animate-infinite-scroll '>
+        <div id='picture' className='flex flex-col flex-nowrap justify-center items-center gap-8 my-8 max-w-none animate-infinite-scroll p-2'>
           {slides.map((slide, index) => (
             <div
             key={index}
-            className=" w-56 h-40 md:w-80 md:h-56 lg:w-96 lg:h-64 rounded-xl shadow-xl" // Adjusted height to match width
+            className=" w-48 h-32 md:w-80 md:h-56 lg:w-96 lg:h-64 rounded-xl shadow-xl" // Adjusted height to match width
             style={{
               backgroundImage: `url('${slide}')`,
               backgroundSize: 'cover', // Changed to 'cover' for better image fitting
@@ -38,7 +38,7 @@ const Carousel = () => {
           >          
               {index === 4 && (
                 <video
-                  className='w-56 h-40 md:w-80 md:h-56 lg:w-96 lg:h-64 rounded-xl shadow-xl object-cover'
+                  className='w-48 h-32 md:w-80 md:h-56 lg:w-96 lg:h-64 rounded-xl shadow-xl object-cover'
                   autoPlay
                   loop
                   muted

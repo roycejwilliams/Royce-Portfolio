@@ -23,7 +23,7 @@ const Dropdown = () => {
 
   return (
     <div>
-    <div className="relative inline-block text-left">
+    <div className="relative lg:inline-block hidden lg:visible text-left">
       <span className="tracking-widest text-white font-clash font-medium uppercase text-xs md:text-md">Who Am I ?</span>
       <button onClick={toggleDown1} className="ml-2 p-2 cursor-pointer text-white">
         {isOpen1 ? (

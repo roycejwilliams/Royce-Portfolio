@@ -19,6 +19,7 @@ export default {
       height: {
         50: "50px",
         150: "150px",
+        200: "200px",
         300: "300px",
         600: "600px",
         620: "620px",
@@ -33,6 +34,10 @@ export default {
       fontSize: {
         xxs: "10px",
         xxxs: "7px",
+        xxxl: "2.75rem",
+      },
+      lineHeight: {
+        xxxl: "2.5rem",
       },
       fontWeight: {
         light: "200",

@@ -17,7 +17,7 @@ const Portfolio = () => {
       <div className='flex h-screen w-full bg-gradient-to-r from-rosered via-rosered to-white '> 
         <div className='w-1/2 h-full flex flex-col lg:flex-none justify-evenly items-center'>
           <Navbar />
-          <div className='h-3/4 w-full flex'>
+          <div className='h-3/4 w-full flex mt-8'>
               <ul className='lg:w-auto h-3/4 lg:flex hidden lg:flex-col items-center justify-center m-4'>
                 <Dropdown />
               </ul>

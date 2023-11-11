@@ -27,19 +27,18 @@ const Photo = () => {
     
     <div className='bg-rosered h-700 w-full flex flex-col overflow-hidden'>
       {/* Title & Description */}
-          <div className='w-full h-1/6  flex justify-center'>
-              <div className='w-full h-auto  flex items-center mt-4'>
-                <h1 className='text-white  w-full font-regular text-xl lg:text-4xl tracking-widest ml-2 font-clash'>THROUGH MY EYES</h1>
+          <div className='w-full h-200 flex justify-center'>
+              <div className='w-1/2 h-auto  flex items-center mt-4'>
+                <h1 className='text-white  w-full font-regular text-lg lg:text-4xl tracking-widest ml-2 font-clash'>THROUGH MY EYES</h1>
               </div> 
-              <div className='h-auto w-full flex justify-center items-center'>
-                <h3 className='font-clash font-regular text-xxxs lg:text-sm  text-white text-center uppercase m-4'>"I've always believed that emotions can be conveyed through photographs, but it's really just a fundamental aspect of art."</h3>
+              <div className='h-auto w-1/2 flex justify-center items-center'>
+                <h3 className='font-clash font-regular text-xxs lg:text-sm  text-white text-center uppercase'>"I've always believed that emotions can be conveyed through photographs, but it's really just a fundamental aspect of art."</h3>
               </div>
-              
           </div>
  
         {/* Photos */}
-           <div className='h-4/6 w-full '> 
-              <div className='w-full h-full flex items-center'>
+           <div className='h-4/5 w-full flex flex-col justify-center items-center'> 
+              <div className='w-full h-5/6 flex items-center'>
                 <div className='flex justify-center items-center h-full w-full'>
                   {slides.map((slide, index) => (
                     <motion.div
@@ -50,21 +49,22 @@ const Photo = () => {
                       style={{
                         backgroundImage: `url('${slide}')`,
                         backgroundSize: 'cover',
-                        filter: 'brightness(0.6)',
+                        filter: 'brightness(0.5)',
                       }}
                     />
                   ))}
-                  <h3 className='text-white font-azeret text-center text-xxs md:text-xs w-3/6 h-fit p-8 absolute z-20'>
+                  <h3 className='text-white font-azeret uppercase font-medium tracking-widest text-center text-xxs md:text-xs w-3/6 h-fit absolute z-20'>
                     In my eyes the world is my reflection and perspective. It's so easy to get caught up in what's around you; you forget what really matters. The essence of being and paying attention is a directional signal. A signal that guides us towards a deeper understanding of life and our place in it. These qualities create a compass, helping us navigate through. Whatever it is, see it through.
                   </h3>
                 </div>
               </div>
-          </div> 
-
-           {/*swipe gestures  */}
-           <div className="relative w-full flex justify-center items-center  h-1/6">
+               {/*swipe gestures  */}
+            <div className="relative w-full flex justify-center items-center h-1/6">
               <div className="w-8 h-8 bg-gray-200 shadow-md shadow-black rounded-full absolute animate-swipe"></div>
             </div>
+          </div> 
+
+          
     </div>
   
   )

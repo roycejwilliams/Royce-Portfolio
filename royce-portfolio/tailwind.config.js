@@ -33,8 +33,8 @@ export default {
       },
       fontSize: {
         xxs: "10px",
-        xxxs: "7px",
-        xxxl: "2.75rem",
+        xxxs: "8px",
+        xxxl: "2.50rem",
       },
       lineHeight: {
         xxxl: "2.5rem",

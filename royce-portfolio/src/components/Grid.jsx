@@ -44,6 +44,11 @@ const Grid = () => {
           }
         }
 
+        /*Resizing Iframe*/ 
+
+        function resizeIframe(iframe) {
+          iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
 
   
 
@@ -70,24 +75,24 @@ const Grid = () => {
 
   return (
       <div className='bg-rosered h-screen w-full flex justify-center items-center'>
-        <div className='w-full h-5/6  grid grid-cols-2 grid-rows-3  lg:grid-cols-3 gap-x-2 gap-y-3 '>
+        <div className='w-full lg:w-5/6 h-5/6 grid grid-cols-1 gap-y-2 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-3 '>
               {/* Skills */}
-              <div className='bg-gradient-to-b flex-col from-black via-black/70 to-white/20 rounded-lg shadow-xl backdrop-blur lg:row-span-2 border lg:w-none lg:h-none flex w-full h-full'>
+              <div className='bg-gradient-to-b flex-col from-black via-black/70 to-white/20 col-span-2 rounded-lg shadow-xl backdrop-blur lg:row-span-2 border lg:w-none  lg:h-none flex w-full h-full'>
                   <div className='w-full h-1/5 flex items-center'>
                     <h2 className='uppercase text-lg lg:text-3xl font-clash tracking-widest ml-4 font-bold text-white'>Skills</h2>
                   </div>
-                {/* <ul className='w-full h-3/4 lg:w-5/6 lg:h-5/6 font-azeret text-white flex flex-col lg:gap-y-8 text-sm uppercase ml-4'>
-                  <li className="flex items-center text-xxxs lg:text-xs"><span>UX/UI</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xxxs lg:text-xs"><span>Branding</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xxxs lg:text-xs"><span>Marketing</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xxxs lg:text-xs"><span>Product Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xxxs lg:text-xs"><span>Strategic Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xxxs lg:text-xs"><span>Consumer Research</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xxxs lg:text-xs"><span>Web Development/Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                </ul> */}
+                <ul className=' w-5/6 lg:h-5/6 font-azeret text-white flex flex-col max-gap-y-2 lg:gap-y-3 text-sm uppercase ml-4'>
+                  <li className="flex items-center text-xs lg:text-xs"><span>UX/UI</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-xs"><span>Branding</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-xs"><span>Marketing</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-xs"><span>Product Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-xs"><span>Strategic Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-xs"><span>Consumer Research</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-xs"><span>Web Development/Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                </ul>
               </div>
               {/* Social Media */}
-              <div className='bg-black rounded-lg shadow-xl w-full h-auto'>
+              <div className='bg-black rounded-lg shadow-xl w-full h-auto col-span-2 lg:col-span-1'>
                 <div className='w-full h-1/3 flex items-center'>
                     <h2 className='uppercase text-sm lg:text-xl font-clash tracking-widest ml-4 font-bold text-white'>socials</h2>
                 </div>
@@ -108,52 +113,57 @@ const Grid = () => {
                 </div>
               </div>
               {/* Mission */}
-              <div className='bg-black rounded-lg shadow-xl flex flex-col justify-center w-full'>
-                <div className='w-full h-1/3 flex items-center'>
-                    <h2 className='uppercase text-sm lg:text-xl font-clash tracking-widest ml-4 font-bold text-white'>mission</h2>
-                </div>
-                <div className=' h-2/3 w-full flex justify-center text-white'>
-                  <p className='font-azeret text-xxs lg:text-sm ml-4 h-1/3 tracking-wider'>Actively contributing to initiatives that foster positive impacts. Engineer and cultivate sustainable products that transcend accessibility barriers, aiming to make a lasting, meaningful difference for all.</p>
-                </div>
+              <div className='bg-black rounded-lg shadow-xl flex flex-col col-span-2 lg:col-span-1 lg:row-span-2 items-center justify-center w-full'>
+                  <div className='w-full h-full block'>
+                    <div className='w-full h-1/3 flex items-center'>
+                      <h2 className='uppercase text-sm lg:text-xl font-clash tracking-widest ml-4 font-bold text-white'>mission</h2>
+                    </div>
+                      <p className='font-azeret text-xxxs text-white lg:text-sm ml-4 tracking-wider max-h-[100%]'>
+                          Actively contributing to initiatives that foster positive impacts. Engineer and cultivate sustainable products that transcend accessibility barriers, aiming to make a lasting, meaningful difference for all.
+                      </p>
+                  </div>
               </div>
               {/* Apple Music - Rotation */}
-              <div className='bg-black rounded-lg shadow-xl lg:col-span-2 flex'>
+              <div className='bg-black rounded-lg shadow-xl col-span-2 flex w-'>
                   <div className='w-2/5 h-full hidden lg:flex lg:visible' >
                         {/* apple music logo */}
                     <div className='w-full h-full flex justify-center items-center' >
                       <img
                           src="./src/images/Apple_Music.png"
-                          className="w-3/4 h-auto" // Apply CSS classes if needed
+                          className="w-2/3 h-auto" // Apply CSS classes if needed
                         />
                     </div>
                   </div>
                     {/*Songs*/}
-                  <div className='w-full h-full flex flex-col overflow-hidden'>
-                    <div className='w-full h-1/3 border flex items-center'>
-                        <h2 className='uppercase text-sm lg:text-xl font-clash tracking-widest ml-4 font-bold text-white'>Current Rotation</h2>
-                    </div>
-                    <div className='flex w-[100%] lg:w-[60%] border h-auto mx-auto transition ease-in duration-150' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                  <div className='w-full lg:w-3/5 h-auto flex items-center overflow-hidden relative'>
+                    <div className='flex  w-[80%] lg:w-[60%] h-auto mx-auto transition ease-in duration-150' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {sounds.map((slide, index) => (
-                        <iframe 
+                        <iframe
+                        className='mt-2'
+                        onLoad={(e) => resizeIframe(e.target)} 
                         allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
                         width="100%"
                         height="200" // Adjust the height based on your needs
                         key={index}
                         style={{
                           maxWidth: '500px',  // Set a lower maxWidth
-                          maxHeight: '200px', // Set a lower maxHeight
+                          maxHeight: '500px', // Set a lower maxHeight
                           overflow: 'hidden',
                           borderRadius: '10px',
-                          padding: '0 5px'
+                          padding: '0 10px'
                         }}
                         src={slide}
                       ></iframe>
                     )) }
                     </div>
                     {/* forward & previous button */}
-                     <div className='w-full h-1/4 flex border gap-24 lg:gap-72 justify-center items-center'>
-                          <button onClick={handlePrev} className='w-8 h-8 hover:bg-white/20 rounded-full flex items-center justify-center transition ease-in duration-800 animate-carousel-left'><FontAwesomeIcon icon={faChevronLeft} style={{color: "#ffffff", fontSize: '16px'}} /></button>
-                          <button onClick={handleForward} className='w-8 h-8 hover:bg-white/20 rounded-full flex items-center justify-center transition ease-in duration-800 animate-carousel-right'><FontAwesomeIcon icon={faChevronRight} style={{color: "#ffffff", fontSize: '16px'}} /></button>
+                     <div className='w-full absolute h-auto flex gap-x-72 justify-between items-center'>
+                          <button onClick={handlePrev} className='w-10 h-10 hover:bg-gray-400  bg-slate-800 rounded-full flex items-center justify-center transition ease-in duration-800 animate-carousel-left' style={{ top: '50%' }}>
+                            <FontAwesomeIcon icon={faChevronLeft} style={{color: "#ffffff", fontSize: '16px'}} />
+                          </button>
+                          <button onClick={handleForward} className='w-10 h-10 hover:bg-gray-400 bg-slate-800 rounded-full flex items-center justify-center transition ease-in duration-800 animate-carousel-right' style={{ top: '50%' }}>
+                            <FontAwesomeIcon icon={faChevronRight} style={{color: "#ffffff", fontSize: '16px'}} />
+                          </button>
                     </div>
                   </div>
               </div>
@@ -167,13 +177,14 @@ const Grid = () => {
                       {tools.map((toolsFile, index) => (
                           <li 
                           key={index}
-                          className='w-16 h-16'>
+                          className=' w-12 h-12'>
                             <img src={toolsFile} alt={`Logo ${index + 1}`} />
                           </li>
                       ))}
                   </ul>
                 </div>
               </div>
+
           </div>
        </div>
   )

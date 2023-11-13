@@ -21,6 +21,7 @@ export default {
         150: "150px",
         200: "200px",
         300: "300px",
+        500: "500px",
         600: "600px",
         620: "620px",
         700: "700px",
@@ -53,6 +54,11 @@ export default {
         "carousel-left": "carousel-left ease-in linear",
         gradient: "gradient 5s ease infinite",
         swipe: "swipe ease 4s infinite",
+        word: "word 7s infinite",
+        "word-delay-1": "word 7s infinite -1.4s",
+        "word-delay-2": "word 7s infinite -2.8s",
+        "word-delay-3": "word 7s infinite -4.2s",
+        "word-delay-4": "word 7s infinite -5.6s",
       },
       keyframes: {
         "infinite-scroll": {
@@ -81,6 +87,21 @@ export default {
           to: {
             transform: "translateX(0px)",
             opacity: "1",
+          },
+        },
+        word: {
+          "0%": {
+            transform: "translateY(100%)",
+          },
+          "15%": {
+            transform: "translateY(-10%)",
+            animationTimingFunction: "ease-out",
+          },
+          "20%": {
+            transform: "translateY(0)",
+          },
+          "40%, 100%": {
+            transform: "translateY(-110%)",
           },
         },
         gradient: {

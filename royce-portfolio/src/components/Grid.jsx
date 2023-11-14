@@ -26,23 +26,15 @@ const Grid = () => {
         "https://embed.music.apple.com/us/album/throw-it-in/1528649764?i=1528650165"
       ];
   
-        const handlePrev = () => {
-          if (currentIndex === 0) {
-            // If at the first item, stay at the first item
-            setCurrentIndex(0);
-          } else {
-            setCurrentIndex(currentIndex - 1);
-          }
-        }
-  
-        const handleForward = () => {
-          if (currentIndex === sounds.length - 1) {
-            // If at the last item, stay at the last item
-            setCurrentIndex(sounds.length - 1);
-          } else {
-            setCurrentIndex(currentIndex + 1);
-          }
-        }
+      const handlePrev = () => {
+        // Ensure the index doesn't go below 0
+        setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+      };
+    
+      const handleForward = () => {
+        // Ensure the index doesn't exceed the length of the sounds array
+        setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, sounds.length - 1));
+      };
 
         /*Resizing Iframe*/ 
 
@@ -82,13 +74,13 @@ const Grid = () => {
                     <h2 className='uppercase text-lg lg:text-3xl font-clash tracking-widest ml-4 font-bold text-white'>Skills</h2>
                   </div>
                 <ul className=' w-5/6 lg:h-5/6 font-azeret text-white flex flex-col max-gap-y-2 lg:gap-y-3 text-sm uppercase ml-4'>
-                  <li className="flex items-center text-xs lg:text-xs"><span>UX/UI</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-xs"><span>Branding</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-xs"><span>Marketing</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-xs"><span>Product Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-xs"><span>Strategic Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-xs"><span>Consumer Research</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-xs"><span>Web Development/Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-sm"><span>UX/UI</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-sm"><span>Branding</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-sm"><span>Marketing</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-sm"><span>Product Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-sm"><span>Strategic Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-sm"><span>Consumer Research</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs lg:text-sm"><span>Web Development/Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
                 </ul>
               </div>
               {/* Social Media */}
@@ -130,13 +122,13 @@ const Grid = () => {
                     <div className='w-full h-full flex justify-center items-center' >
                       <img
                           src="./src/images/Apple_Music.png"
-                          className="w-2/3 h-auto" // Apply CSS classes if needed
+                          className="w-2/3 lg:w-full h-auto" // Apply CSS classes if needed
                         />
                     </div>
                   </div>
                     {/*Songs*/}
                   <div className='w-full lg:w-3/5 h-auto flex items-center overflow-hidden relative'>
-                    <div className='flex  w-[80%] lg:w-[60%] h-auto mx-auto transition ease-in duration-150' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                    <div className='flex  w-[60%] h-auto mx-auto transition ease-in duration-150' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {sounds.map((slide, index) => (
                         <iframe
                         className='mt-2'
@@ -150,14 +142,16 @@ const Grid = () => {
                           maxHeight: '500px', // Set a lower maxHeight
                           overflow: 'hidden',
                           borderRadius: '10px',
-                          padding: '0 10px'
+                          padding: '0 10px',
+                          opacity: currentIndex === index ? 1 : 0,
+                          transition: 'opacity 0.5s ease-in-out',
                         }}
                         src={slide}
                       ></iframe>
                     )) }
                     </div>
                     {/* forward & previous button */}
-                     <div className='w-full absolute h-auto flex gap-x-72 justify-between items-center'>
+                     <div className='w-full absolute h-auto flex gap-x-60 justify-between items-center'>
                           <button onClick={handlePrev} className='w-10 h-10 hover:bg-gray-400  bg-slate-800 rounded-full flex items-center justify-center transition ease-in duration-800 animate-carousel-left' style={{ top: '50%' }}>
                             <FontAwesomeIcon icon={faChevronLeft} style={{color: "#ffffff", fontSize: '16px'}} />
                           </button>

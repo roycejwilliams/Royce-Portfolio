@@ -16,15 +16,15 @@ const Graphics = () => {
     <div>
         <div className='bg-black h-screen w-full flex'>
             <div className='h-full w-5/6 flex flex-col'>
-                <div className='w-auto h-24 flex items-center'>
-                    <h2 className='text-white text-sm font-azeret ml-4'> Prioritizing high-quality graphics can save time, especially for individuals like me who may struggle to fully articulate their ideas. Here are some graphics from all over the internet, it's a small batch of a larger sum but you get it </h2>
+                <div className='w-auto lg:h-16 h-1/4  flex items-center'>
+                    <h2 className='text-white text-xs font-azeret ml-4'> Prioritizing high-quality graphics can save time, especially for individuals like me who may struggle to fully articulate their ideas. Here are some graphics from all over the internet, it's a small batch of a larger sum but you get it </h2>
                 </div>
                 {/* Graphic */}
                 <div className='h-full w-auto flex items-center'>
-                    <div className='h-full w-5/6 ml-4 flex flex-wrap gap-12'>
+                    <div className='h-3/4  lg:h-full w-full lg:w-5/6 ml-4 flex flex-wrap gap-4 lg:gap-12'>
                         {graphics.map((graphicFile, index) => (
                             <div 
-                            className='w-48 h-72' 
+                            className='lg:w-48 lg:h-72 w-20 h-32' 
                             key={index}
                             style={{
                                 backgroundImage: `url('${graphicFile}')`,

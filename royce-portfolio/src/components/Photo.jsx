@@ -25,7 +25,7 @@ const Photo = () => {
 
   return (
     
-    <div className='bg-rosered h-700 w-full flex flex-col overflow-hidden'>
+    <div className='bg-rosered h-700 w-full flex flex-col overflow-hidden -mb-1'>
       {/* Title & Description */}
           <div className='w-full h-200 flex justify-center'>
               <div className='w-1/2 h-auto  flex items-center mt-4'>

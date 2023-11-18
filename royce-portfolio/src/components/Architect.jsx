@@ -23,7 +23,7 @@ const href = ['https://thelocalproject.com.au/galleries/gallery-of-port-melbourn
 
 const Architect = () => {
   return (
-    <div>
+    <div className='-mb-1'>
         <div className='h-screen w-full bg-black'>
             <div className='w-full h-36 flex items-center'>
                 <div className='h-16 lg:w-10/12 w-5/6 flex bg-rosered justify-end items-center'>
@@ -31,8 +31,8 @@ const Architect = () => {
                 </div>
             </div>
             
-                <div className='w-5/6 lg:w-full h-4/5 flex justify-between'>
-                    <div className='lg:h-full w-full lg:w-1/2 ml-4 flex gap-4'>
+                <div className='w-5/6 lg:w-full h-4/5  flex justify-between'>
+                    <div className='lg:h-full w-full lg:w-1/2 lg:ml-4 h-5/6 flex gap-4'>
                         {architect.map((artFile, index) => (
                             <a className='border' href={href[index]} key={index} target="_blank" rel="noopener noreferrer">
                                 <div className='lg:w-24 h-full w-14 '  
@@ -44,7 +44,7 @@ const Architect = () => {
                                     }}
                                 >
                                     <div className="w-full h-full bg-black opacity-50 flex items-center justify-center hover:bg-gray-300 hover:opacity-50 text-white hover:text-black transition duration-200">
-                                        <span className='rotate-90 whitespace-nowrap uppercase tracking-widest font-azeret font-medium'>{titles[index]}</span>
+                                        <span className='rotate-90 whitespace-nowrap uppercase tracking-widest font-azeret text-xs lg:text-lg font-medium'>{titles[index]}</span>
                                     </div>
                                 </div>
                             </a>

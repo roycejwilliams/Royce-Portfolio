@@ -24,7 +24,7 @@ const titles = ['A-COLD-WALL',
 
 const Fashion = () => {
   return (
-    <div>
+    <div className='-mb-1'>
         <div className='h-screen w-full bg-black flex items-center'>
             <div className='w-1/6 h-full flex items-end justify-center'>
               <div className='w-16 h-4/6 bg-rosered flex  flex-col items-center justify-center'>
@@ -38,16 +38,16 @@ const Fashion = () => {
                         <h2 className='uppercase font-clash text-5xl text-white'>S</h2>
               </div>
             </div>
-            <div className='w-2/6 h-2/5 flex items-center'>
-                <p className='text-white font-azeret text-sm'>Found my style way back when I was a kid. I was always drawn to the way clothes are complimented, structured, and layered. Garments became a big love of mine as a grew in age but right now it doesn't serve me any purpose.. Maybe I'll get back to <a href='https://www.instagram.com/duvernayofficial/' style={{ color: '#A67B5B', fontSize: '20px' }}>
+            <div className='w-2/6 h-2/5 lg:flex hidden lg:visible items-center'>
+                <p className='text-white  font-azeret text-sm'>Found my style way back when I was a kid. I was always drawn to the way clothes are complimented, structured, and layered. Garments became a big love of mine as a grew in age but right now it doesn't serve me any purpose.. Maybe I'll get back to <a href='https://www.instagram.com/duvernayofficial/' style={{ color: '#A67B5B', fontSize: '20px' }}>
                     DUVERNAY
                   </a>  later who knows.<br></br><br></br>Here Are Some of the Labels I Admire: </p>
             </div>
-            <div className='w-3/6 h-full flex  justify-center items-center'>
-                <div className='w-2/3 h-full flex flex-col flex-wrap justify-center items-center gap-y-4 hover:scale-110 transition duration-100'>
+            <div className='lg:w-3/6 lg:h-full w-full h-full flex justify-center items-center'>
+                <div className='lg:h-full h-1/2 mx-auto max-w-md flex flex-col flex-wrap justify-center items-center gap-4 hover:scale-110 transition duration-100'>
                         {fashion.map((fashionFile, index) => (
                           <a href={href[index]} key={index} target="_blank" rel="noopener noreferrer">
-                              <div className='w-52 h-48 rounded-xl'  
+                              <div className='lg:w-52 lg:h-48 w-28 h-24 rounded-xl'  
                                   style={{
                                       backgroundImage: `url('${fashionFile}')`,
                                       backgroundSize: 'cover',
@@ -56,8 +56,8 @@ const Fashion = () => {
                                   }}
                               >
                                  <div className="w-full h-full bg-black/50 opacity-50 rounded-lg flex items-center justify-center hover:bg-gray-300 hover:opacity-50 text-white hover:text-black transition duration-200">
-                                        <span className='whitespace-nowrap uppercase tracking-widest font-azeret font-medium'>{titles[index]}</span>
-                                    </div>
+                                        <span className='whitespace-nowrap uppercase tracking-widest font-azeret text-xxs lg:font-medium'>{titles[index]}</span>
+                                </div>
                               </div>
                           </a>
                     ))}

@@ -13,7 +13,7 @@ const graphics = ['./src/images/graphic(1).gif',
 
 const Graphics = () => {
   return (
-    <div>
+    <div className='-mb-1'>
         <div className='bg-black h-screen w-full flex'>
             <div className='h-full w-5/6 flex flex-col'>
                 <div className='w-auto lg:h-16 h-1/4  flex items-center'>
@@ -24,7 +24,7 @@ const Graphics = () => {
                     <div className='h-3/4  lg:h-full w-full lg:w-5/6 ml-4 flex flex-wrap gap-4 lg:gap-12'>
                         {graphics.map((graphicFile, index) => (
                             <div 
-                            className='lg:w-48 lg:h-72 w-20 h-32' 
+                            className='lg:w-40 lg:h-56 w-20 h-32' 
                             key={index}
                             style={{
                                 backgroundImage: `url('${graphicFile}')`,

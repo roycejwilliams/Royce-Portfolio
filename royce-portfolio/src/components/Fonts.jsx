@@ -3,7 +3,7 @@ import "../index.css"
 
 const Fonts = () => {
   return (
-    <div>
+    <div className='-mb-1'>
       <div className='h-screen bg-black w-full flex'>
         <div className='w-1/2 h-full flex flex-col  justify-center gap-y-4 font-clash text-white'>
           <div className='lg:w-5/6 lg:h-1/6  ml-4 flex flex-col justify-center'>

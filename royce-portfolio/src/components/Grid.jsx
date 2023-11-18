@@ -10,8 +10,9 @@ const Grid = () => {
       const [currentIndex, setCurrentIndex] = useState(0);
 
       const sounds = [
+        "https://embed.music.apple.com/us/album/from-uncle-herm/1551703598?i=1551703599",
+        "https://embed.music.apple.com/us/album/leaving-the-dock/1423331343?i=1423331348",
         "https://embed.music.apple.com/us/album/in-between-and-overseas/1607100188?i=1607101242",
-        "https://embed.music.apple.com/us/album/orange-village/1677236538?i=1677236904",
         "https://embed.music.apple.com/us/album/dreams-money-can-buy/1475177816?i=1475177817",
         "https://embed.music.apple.com/us/album/goyard-umbrella/1677198478?i=1677198491",
         "https://embed.music.apple.com/us/album/louis-baggage-feat-babyface-ray/1609125563?i=1609126175",
@@ -23,7 +24,13 @@ const Grid = () => {
         "https://embed.music.apple.com/us/album/grindn/446922317?i=446922324",
         "https://embed.music.apple.com/us/album/in-the-midst/1276744870?i=1276745411",
         "https://embed.music.apple.com/us/album/i-am-a-god-feat-god/1440873068?i=1440873233",
-        "https://embed.music.apple.com/us/album/throw-it-in/1528649764?i=1528650165"
+        "https://embed.music.apple.com/us/album/throw-it-in/1528649764?i=1528650165",
+        "https://embed.music.apple.com/us/album/what-i-tell-kids/994273343?i=994273489",
+        "https://embed.music.apple.com/us/album/baldwin-park/1236828998?i=1236829680",
+        "https://embed.music.apple.com/us/album/afro-blue-9th-wonders-blue-light-basement-remix-feat/715651227?i=715651729",
+        "https://embed.music.apple.com/us/album/rose-quartz/1666142474?i=1666142667",
+        "https://embed.music.apple.com/us/album/dark-handsome-feat-toro-y-moi/1470332876?i=1470332879",
+        "https://embed.music.apple.com/us/album/move-to-la/1487185414?i=1487185846",
       ];
   
       const handlePrev = () => {
@@ -66,35 +73,35 @@ const Grid = () => {
         }, []);
 
   return (
-      <div className='bg-rosered h-screen w-full flex justify-center items-center'>
-        <div className='w-full lg:w-5/6 h-5/6 grid grid-cols-1 gap-y-2 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-3 '>
+      <div className='bg-rosered h-screen w-full flex justify-center items-center -mb-1'>
+        <div className='w-full md:w-5/6 h-5/6 grid grid-cols-1 gap-y-2 sm:grid-cols-3 md:gap-x-2 md:gap-y-3 '>
               {/* Skills */}
-              <div className='bg-gradient-to-b flex-col from-black via-black/70 to-white/20 col-span-2 rounded-lg shadow-xl backdrop-blur lg:row-span-2 border lg:w-none  lg:h-none flex w-full h-full'>
+              <div className='bg-gradient-to-b flex-col from-black via-black/70 to-white/20 col-span-2 rounded-lg shadow-xl backdrop-blur md:row-span-2 border md:w-none  md:h-none flex w-full h-full'>
                   <div className='w-full h-1/5 flex items-center'>
                     <h2 className='uppercase text-lg lg:text-3xl font-clash tracking-widest ml-4 font-bold text-white'>Skills</h2>
                   </div>
-                <ul className=' w-5/6 lg:h-5/6 font-azeret text-white flex flex-col max-gap-y-2 lg:gap-y-3 text-sm uppercase ml-4'>
-                  <li className="flex items-center text-xs lg:text-sm"><span>UX/UI</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-sm"><span>Branding</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-sm"><span>Marketing</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-sm"><span>Product Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-sm"><span>Strategic Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-sm"><span>Consumer Research</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
-                  <li className="flex items-center text-xs lg:text-sm"><span>Web Development/Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                <ul className=' w-5/6 lg:h-5/6 font-azeret text-white flex flex-col max-gap-y-2 md:gap-y-3 text-sm uppercase ml-4'>
+                  <li className="flex items-center text-xs md:text-sm"><span>UX/UI</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs md:text-sm"><span>Branding</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs md:text-sm"><span>Marketing</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs md:text-sm"><span>Product Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs md:text-sm"><span>Strategic Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs md:text-sm"><span>Consumer Research</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
+                  <li className="flex items-center text-xs md:text-sm"><span>Web Development/Design</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
                 </ul>
               </div>
               {/* Social Media */}
-              <div className='bg-black rounded-lg shadow-xl w-full h-auto col-span-2 lg:col-span-1'>
+              <div className='bg-black rounded-lg shadow-xl w-full h-auto col-span-2 sm:col-span-1'>
                 <div className='w-full h-1/3 flex items-center'>
                     <h2 className='uppercase text-sm lg:text-xl font-clash tracking-widest ml-4 font-bold text-white'>socials</h2>
                 </div>
                 <div className=' w-full flex items-center justify-center h-3/6 '>
-                    <ul className='w-full h-full flex flex-wrap justify-center items-center gap-x-4 '>
+                    <ul className='w-full h-full mx-auto flex flex-wrap justify-center items-center gap-x-4 md:gap-2 '>
                     {logoFiles.map((logo, index) => (
                         <a href={href[index]}>
                           <li 
                             key={index} 
-                            className="bg-gray-800 w-12 h-12 lg:w-14 lg:h-14 rounded-xl hover:scale-75 transition ease-in 800s hover:shadow-xl hover:shadow-white">
+                            className="bg-gray-800 w-12 h-12  xl:w-12 xl:h-12 rounded-xl hover:scale-75 transition ease-in 800s hover:shadow-xl hover:shadow-white">
                             <img src={logo}
                                 className="h-full w-full object-cover"
                             />
@@ -105,12 +112,12 @@ const Grid = () => {
                 </div>
               </div>
               {/* Mission */}
-              <div className='bg-black rounded-lg shadow-xl flex flex-col col-span-2 lg:col-span-1 lg:row-span-2 items-center justify-center w-full'>
+              <div className='bg-black rounded-lg shadow-xl flex flex-col col-span-2 sm:col-span-1 sm:row-span-2 items-center justify-center w-full'>
                   <div className='w-full h-full block'>
                     <div className='w-full h-1/3 flex items-center'>
                       <h2 className='uppercase text-sm lg:text-xl font-clash tracking-widest ml-4 font-bold text-white'>mission</h2>
                     </div>
-                      <p className='font-azeret text-xxxs text-white lg:text-sm ml-4 tracking-wider max-h-[100%]'>
+                      <p className='font-azeret text-xxxs text-white md:text-xs ml-4 tracking-wider max-h-[100%]'>
                           Actively contributing to initiatives that foster positive impacts. Engineer and cultivate sustainable products that transcend accessibility barriers, aiming to make a lasting, meaningful difference for all.
                       </p>
                   </div>
@@ -127,8 +134,8 @@ const Grid = () => {
                     </div>
                   </div>
                     {/*Songs*/}
-                  <div className='w-full lg:w-3/5 h-auto flex items-center overflow-hidden relative'>
-                    <div className='flex  w-[60%] h-auto mx-auto transition ease-in duration-150' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                  <div className='w-full h-auto flex items-center overflow-hidden relative'>
+                    <div className='flex xl:w-[50%] w-[60%] h-auto mx-auto transition ease-in duration-150' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {sounds.map((slide, index) => (
                         <iframe
                         className='mt-2'
@@ -162,7 +169,7 @@ const Grid = () => {
                   </div>
               </div>
               {/* Tools */}
-              <div className='bg-black rounded-lg shadow-xl col-span-2 lg:col-span-3 flex justify-center items-center'>
+              <div className='bg-black rounded-lg shadow-xl col-span-2 sm:col-span-3 flex justify-center items-center'>
                 <div className='flex justify-center w-1/2 h-full text-white items-center font-clash uppercase'>
                   <h2 className='text-xl lg:text-5xl font-bold tracking-widest'>tech stack</h2>
                 </div>

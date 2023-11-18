@@ -33,7 +33,8 @@ const inspo = ['./src/images/godly.jpeg',
 const Inspo = () => {
   return (
     <div>
-      <div className=' h-screen w-full flex items-center flex-col justify-center  bg-black'>
+      <div className=' h-screen w-full flex items-center flex-col justify-center  bg-black -mb-1'>
+        <Navbar />
         {/* message */}
         <div className='w-full h-56 text-white inline-block font-clash'>
           <div className='w-5/6 ml-4 h-3/5 flex items-center'>
@@ -75,7 +76,7 @@ const Inspo = () => {
       <Fonts />
        <Graphics />
       <Architect />
-      {/* <Fashion />  */}
+      <Fashion /> 
       <Footer />
     </div>
   )

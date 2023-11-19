@@ -3,20 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 
-import appleMusic from '../images/Apple_Music.png'
+import appleMusic from '/public/images/Apple_Music.png'
 
-import socialImg1 from '../images/twitter-x-logo.png';
-import socialImg2 from '../images/instagram.png';
-import socialImg3 from '../images/linkedIn.webp';
-import socialImg4 from '../images/git.png';
-import socialImg5 from '../images/google.png';
+import socialImg1 from '/public/images/twitter-x-logo.png';
+import socialImg2 from '/public/images/instagram.png';
+import socialImg3 from '/public/images/linkedIn.webp';
+import socialImg4 from '/public/images/git.png';
+import socialImg5 from '/public/images/google.png';
 
-import toolsImg1 from '../images/vitejs.png'
-import toolsImg2 from '../images/reactjs.png'
-import toolsImg3 from '../images/javascript.png'
-import toolsImg4 from '../images/figma.png'
-import toolsImg5 from '../images/adobe.png'
-import toolsImg6 from '../images/nextjs.png'
+import toolsImg1 from '/public/images/vitejs.png'
+import toolsImg2 from '/public/images/reactjs.png'
+import toolsImg3 from '/public/images/javascript.png'
+import toolsImg4 from '/public/images/figma.png'
+import toolsImg5 from '/public/images/adobe.png'
+import toolsImg6 from '/public/images/nextjs.png'
 
 const Grid = () => {
 

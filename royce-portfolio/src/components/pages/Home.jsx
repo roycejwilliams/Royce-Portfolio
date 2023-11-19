@@ -4,7 +4,7 @@ import Button from '../Button';
 import Links from '../Links';
 import "../../index.css"
 
-import navImg from '../../images/royce-logo.png';
+import navImg from '/public/images/royce-logo.png';
 
 const Home = () => {
   return (

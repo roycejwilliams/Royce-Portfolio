@@ -10,17 +10,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 
-import inspoImg1 from '../../images/godly.jpeg';
-import inspoImg2 from '../../images/local-project.jpeg';
-import inspoImg3 from '../../images/DiaryofaCEO.jpeg';
-import inspoImg4 from '../../images/idea-gen.jpeg';
-import inspoImg5 from '../../images/laws.jpeg';
-import inspoImg6 from '../../images/big-think.jpeg';
-import inspoImg7 from '../../images/complex.jpeg';
-import inspoImg8 from '../../images/acoldwall.png';
-import inspoImg9 from '../../images/arsham.png';
-import inspoImg10 from '../../images/show.jpeg';
-import inspoImg11 from '../../images/five-moves.jpeg';
+import inspoImg1 from '/public/images/godly.jpeg';
+import inspoImg2 from '/public/images/local-project.jpeg';
+import inspoImg3 from '/public/images/DiaryofaCEO.jpeg';
+import inspoImg4 from '/public/images/idea-gen.jpeg';
+import inspoImg5 from '/public/images/laws.jpeg';
+import inspoImg6 from '/public/images/big-think.jpeg';
+import inspoImg7 from '/public/images/complex.jpeg';
+import inspoImg8 from '/public/images/acoldwall.png';
+import inspoImg9 from '/public/images/arsham.png';
+import inspoImg10 from '/public/images/show.jpeg';
+import inspoImg11 from '/public/images/five-moves.jpeg';
 
 
 

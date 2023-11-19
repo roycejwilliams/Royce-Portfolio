@@ -1,19 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from "framer-motion";
 
-import image1 from '../images/photo(5).jpg';
-import image2 from '../images/photo(6).jpg';
-import image3 from '../images/photo(4).jpg';
-import image4 from '../images/photo(1).jpg';
-import image5 from '../images/photo(8).jpg';
-import image6 from '../images/photo(10).jpg';
-import image7 from '../images/photo(11).jpg';
-import image8 from '../images/photo(12).jpg';
-import image9 from '../images/photo(14).jpg';
-import image10 from '../images/photo(16).jpg';
-import image11 from '../images/photo(17).jpg';
-import image12 from '../images/photo(18).jpg';
-import image13 from '../images/photo(19).jpg';
+import image1 from '/public/images/photo(5).jpg';
+import image2 from '/public/images/photo(6).jpg';
+import image3 from '/public/images/photo(4).jpg';
+import image4 from '/public/images/photo(1).jpg';
+import image5 from '/public/images/photo(8).jpg';
+import image6 from '/public/images/photo(10).jpg';
+import image7 from '/public/images/photo(11).jpg';
+import image8 from '/public/images/photo(12).jpg';
+import image9 from '/public/images/photo(14).jpg';
+import image10 from '/public/images/photo(16).jpg';
+import image11 from '/public/images/photo(17).jpg';
+import image12 from '/public/images/photo(18).jpg';
+import image13 from '/public/images/photo(19).jpg';
 
 const Photo = () => {
 

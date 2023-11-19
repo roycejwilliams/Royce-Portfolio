@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import bioImg from '../images/bio.jpeg';
-import thinkingImg from '../images/thinking.jpeg';
+import bioImg from '/public/images/bio.jpeg';
+import thinkingImg from '/public/images/thinking.jpeg';
 
 const Sources = () => {
 

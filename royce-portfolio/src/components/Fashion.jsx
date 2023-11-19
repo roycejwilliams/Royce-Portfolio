@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-import fashionImg1 from '../images/acoldwall-bomber.webp'
-import fashionImg2 from '../images/peter-do.webp'
-import fashionImg3 from '../images/bianca_saunders.jpeg'
-import fashionImg4 from '../images/reese-cooper.webp'
-import fashionImg5 from '../images/ferragamo.webp'
-import fashionImg6 from '../images/martine.webp'
+import fashionImg1 from '/public/images/acoldwall-bomber.webp'
+import fashionImg2 from '/public/images/peter-do.webp'
+import fashionImg3 from '/public/images/bianca_saunders.jpeg'
+import fashionImg4 from '/public/images/reese-cooper.webp'
+import fashionImg5 from '/public/images/ferragamo.webp'
+import fashionImg6 from '/public/images/martine.webp'
 
 const fashion = [
                   fashionImg1,

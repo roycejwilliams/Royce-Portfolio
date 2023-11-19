@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import navImg from '../images/royce-logo.png';
+import navImg from '/public/images/royce-logo.png';
 
 
 

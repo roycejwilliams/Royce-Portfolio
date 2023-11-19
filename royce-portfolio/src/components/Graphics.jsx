@@ -1,13 +1,13 @@
 import React from 'react'
 
-import graphicsImg1 from '../images/graphic(1).gif';
-import graphicsImg2 from '../images/graphic(2).jpg';
-import graphicsImg3 from '../images/graphic(3).png';
-import graphicsImg4 from '../images/graphic(4).jpeg';
-import graphicsImg5 from '../images/graphic(5).jpeg';
-import graphicsImg6 from '../images/graphic(6).gif';
-import graphicsImg7 from '../images/graphic(7).jpeg';
-import graphicsImg8 from '../images/graphic(8).jpeg';
+import graphicsImg1 from '/public/images/graphic(1).gif';
+import graphicsImg2 from '/public/images/graphic(2).jpg';
+import graphicsImg3 from '/public/images/graphic(3).png';
+import graphicsImg4 from '/public/images/graphic(4).jpeg';
+import graphicsImg5 from '/public/images/graphic(5).jpeg';
+import graphicsImg6 from '/public/images/graphic(6).gif';
+import graphicsImg7 from '/public/images/graphic(7).jpeg';
+import graphicsImg8 from '/public/images/graphic(8).jpeg';
 
 
 

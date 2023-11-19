@@ -55,7 +55,11 @@ const Photo = () => {
                   {slides.map((slide, index) => (
                     <motion.div
                       drag="x"
-                      dragConstraints={{ left: 0, right: 300 }}
+                      dragConstraints={{ left: 0, right: { 
+                        lg: 300,
+                        md: 200,
+                        sm: 100,
+                      } }}
                       key={index}
                       className="w-72 h-96 rounded-lg shadow-sm absolute cursor-pointer z-10"
                       style={{

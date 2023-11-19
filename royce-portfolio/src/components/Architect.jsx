@@ -1,11 +1,18 @@
 import React from 'react'
 
+import archImg1 from '../images/Gallery-of-Port-Melbourne-House-Local-Design-and-Interiors-Port-Melbourne-VIC-Image-1.jpeg'
+import archImg2 from '../images/Dune-Main-Beach-by-Andrews-Projects-and-Rothelowman-Project-Feature-The-Local-Project-Image-05-min-scaled.jpeg'
+import archImg3 from '../images/Awana-Beach-House-by-Herbst-Architects-Issue-09-Feature-The-Local-Project-Image-43-2.jpeg'
+import archImg4 from '../images/Eco-Friendly-Home-for-an-Artist.jpeg'
+import archImg5 from '../images/MODERN-YET-TIMELESS-MINIMALISM-BRIGHTON-LUXE-BY-CARR-Melbourne.jpeg'
 
-const architect = ['./src/images/Gallery-of-Port-Melbourne-House-Local-Design-and-Interiors-Port-Melbourne-VIC-Image-1.jpeg', 
-                    './src/images/Dune-Main-Beach-by-Andrews-Projects-and-Rothelowman-Project-Feature-The-Local-Project-Image-05-min-scaled.jpeg',
-                    './src/images/Awana-Beach-House-by-Herbst-Architects-Issue-09-Feature-The-Local-Project-Image-43-2.jpeg',
-                    './src/images/Eco-Friendly-Home-for-an-Artist.jpeg',
-                    './src/images/MODERN-YET-TIMELESS-MINIMALISM-BRIGHTON-LUXE-BY-CARR-Melbourne.jpeg',
+
+
+const architect = [archImg1,
+                   archImg2,
+                   archImg3,
+                   archImg4,
+                   archImg5
                     ]
 
 const titles = ['PORT MELBOURNE HOUSE by Winter Architecture',

@@ -3,6 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 
+import appleMusic from '../images/Apple_Music.png'
+
+import socialImg1 from '../images/twitter-x-logo.png';
+import socialImg2 from '../images/instagram.png';
+import socialImg3 from '../images/linkedIn.webp';
+import socialImg4 from '../images/git.png';
+import socialImg5 from '../images/google.png';
+
+import toolsImg1 from '../images/vitejs.png'
+import toolsImg2 from '../images/reactjs.png'
+import toolsImg3 from '../images/javascript.png'
+import toolsImg4 from '../images/figma.png'
+import toolsImg5 from '../images/adobe.png'
+import toolsImg6 from '../images/nextjs.png'
+
 const Grid = () => {
 
   /*playlist carousel*/
@@ -53,7 +68,13 @@ const Grid = () => {
 
 
     /*social media icons*/
-       const logoFiles = ['./src/images/twitter-x-logo.png', './src/images/instagram.png', './src/images/linkedIn.webp', './src/images/git.png', './src/images/google.png']
+       const logoFiles = [
+        socialImg1,
+        socialImg2,
+        socialImg3,
+        socialImg4,
+        socialImg5
+       ]
        const href = ['https://twitter.com/roycwilliams',
                      'https://www.instagram.com/roycejwilliams/',
                      'https://www.linkedin.com/in/royce-williams-9bb2021a1/',
@@ -61,7 +82,14 @@ const Grid = () => {
                      'mailto: roycewilliamsj@gmail.com']
 
     /* tools icons */
-        const tools = ['./src/images/vitejs.png', './src/images/reactjs.png', './src/images/javascript.png', './src/images/figma.png', './src/images/adobe.png', './src/images/notion.png', './src/images/dropbox.png', './src/images/nextjs.png'];
+        const tools = [
+          toolsImg1,
+          toolsImg2,
+          toolsImg3,
+          toolsImg4,
+          toolsImg5,
+          toolsImg6
+        ];
         useEffect(() => {
           const init = () => {
             let ul = document.getElementById('logos');
@@ -128,7 +156,7 @@ const Grid = () => {
                         {/* apple music logo */}
                     <div className='w-full h-full flex justify-center items-center' >
                       <img
-                          src="./src/images/Apple_Music.png"
+                          src={appleMusic}
                           className="w-2/3 lg:w-full h-auto" // Apply CSS classes if needed
                         />
                     </div>

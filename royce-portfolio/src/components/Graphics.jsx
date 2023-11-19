@@ -1,14 +1,29 @@
 import React from 'react'
 
+import graphicsImg1 from '../images/graphic(1).gif';
+import graphicsImg2 from '../images/graphic(2).jpg';
+import graphicsImg3 from '../images/graphic(3).png';
+import graphicsImg4 from '../images/graphic(4).jpeg';
+import graphicsImg5 from '../images/graphic(5).jpeg';
+import graphicsImg6 from '../images/graphic(6).gif';
+import graphicsImg7 from '../images/graphic(7).jpeg';
+import graphicsImg8 from '../images/graphic(8).jpeg';
 
-const graphics = ['./src/images/graphic(1).gif',
-                  './src/images/graphic(2).JPG',
-                  './src/images/graphic(3).png',
-                  './src/images/graphic(4).jpeg',
-                  './src/images/graphic(5).jpeg',
-                  './src/images/graphic(6).gif',
-                './src/images/graphic(7).jpeg',
-                './src/images/graphic(8).jpeg',]
+
+
+
+
+const graphics = [
+        graphicsImg1,
+        graphicsImg2,
+        graphicsImg3,
+        graphicsImg4,
+        graphicsImg5,
+        graphicsImg6,
+        graphicsImg7,
+        graphicsImg8
+
+]
 
 
 const Graphics = () => {

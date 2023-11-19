@@ -1,17 +1,26 @@
 import React, { useEffect, useRef } from 'react';
 
+import image1 from '../images/LEMA-website-portfolio.jpg';
+import image2 from '../images/wigroup-portfolio.jpg'; 
+import image3 from '../images/revital-reflections.png';
+import image4 from '../images/TXEA-Seal.jpg';
+import video1 from '../videos/revital-preview.mp4';
+import image5 from '../images/Oni-Real-Estate.png';
+import image6 from '../images/a2d.jpg';
+
+
 
 const Carousel = () => {
 
 
     const slides = [
-      './src/images/LEMA-website-portfolio.jpg',
-      './src/images/wigroup-portfolio.jpg',
-       './src/images/revital-reflections.png',
-       './src/images/TXEA-Seal.jpg',
-       './src/videos/revital-preview.mp4',
-       './src/images/Oni-Real-Estate.png',
-       './src/images/a2d.jpg',
+        image1,
+        image2,
+        image3,
+        image4,
+        video1,
+        image5,
+        image6
     ];
 
     useEffect(() => {

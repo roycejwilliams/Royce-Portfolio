@@ -1,12 +1,21 @@
 import React from 'react'
 
 
-const fashion = ['./src/images/acoldwall-bomber.webp',
-                 './src/images/peter-do.webp',
-                 './src/images/bianca_saunders.jpeg',
-                 './src/images/reese-cooper.webp',
-                 './src/images/ferragamo.webp',
-                 './src/images/martine.webp']
+import fashionImg1 from '../images/acoldwall-bomber.webp'
+import fashionImg2 from '../images/peter-do.webp'
+import fashionImg3 from '../images/bianca_saunders.jpeg'
+import fashionImg4 from '../images/reese-cooper.webp'
+import fashionImg5 from '../images/ferragamo.webp'
+import fashionImg6 from '../images/martine.webp'
+
+const fashion = [
+                  fashionImg1,
+                  fashionImg2,
+                  fashionImg3,
+                  fashionImg4,
+                  fashionImg5,
+                  fashionImg6
+]
 
 const href = ['https://a-cold-wall.com/collections/autumn-winter-2023',
               'https://peterdo.net/pages/fw22',

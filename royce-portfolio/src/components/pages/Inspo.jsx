@@ -10,6 +10,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 
+import inspoImg1 from '../../images/godly.jpeg';
+import inspoImg2 from '../../images/local-project.jpeg';
+import inspoImg3 from '../../images/DiaryofaCEO.jpeg';
+import inspoImg4 from '../../images/idea-gen.jpeg';
+import inspoImg5 from '../../images/laws.jpeg';
+import inspoImg6 from '../../images/big-think.jpeg';
+import inspoImg7 from '../../images/complex.jpeg';
+import inspoImg8 from '../../images/acoldwall.png';
+import inspoImg9 from '../../images/arsham.png';
+import inspoImg10 from '../../images/show.jpeg';
+import inspoImg11 from '../../images/five-moves.jpeg';
+
+
+
+
 const emailAddress = "roycewilliamsj@gmail.com";
 
     const handleEmailClick = () => {
@@ -17,17 +32,18 @@ const emailAddress = "roycewilliamsj@gmail.com";
     };
 
 
-const inspo = ['./src/images/godly.jpeg',
-                './src/images/local-project.jpeg',
-                './src/images/DiaryofaCEO.jpeg',
-                './src/images/idea-gen.jpeg',
-                './src/images/laws.jpeg',
-                './src/images/big-think.jpeg',
-                './src/images/complex.jpeg',
-                './src/images/acoldwall.png',
-                './src/images/arsham.png',
-                './src/images/show.jpeg',
-                './src/images/five-moves.jpeg',
+const inspo = [
+            inspoImg1,
+            inspoImg2,
+            inspoImg3,
+            inspoImg4,
+            inspoImg5,
+            inspoImg6,
+            inspoImg7,
+            inspoImg8,
+            inspoImg9,
+            inspoImg10,
+            inspoImg11
                ];
 
 const Inspo = () => {

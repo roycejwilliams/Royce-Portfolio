@@ -1,26 +1,38 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from "framer-motion";
 
-
+import image1 from '../images/photo(5).jpg';
+import image2 from '../images/photo(6).jpg';
+import image3 from '../images/photo(4).jpg';
+import image4 from '../images/photo(1).jpg';
+import image5 from '../images/photo(8).jpg';
+import image6 from '../images/photo(10).jpg';
+import image7 from '../images/photo(11).jpg';
+import image8 from '../images/photo(12).jpg';
+import image9 from '../images/photo(14).jpg';
+import image10 from '../images/photo(16).jpg';
+import image11 from '../images/photo(17).jpg';
+import image12 from '../images/photo(18).jpg';
+import image13 from '../images/photo(19).jpg';
 
 const Photo = () => {
 
 
 
   const slides = [
-    './src/images/photo(5).JPG',
-    './src/images/photo(6).JPG',
-     './src/images/photo(4).JPG',
-     './src/images/photo(1).JPG',
-     './src/images/photo(8).JPG',
-     './src/images/photo(10).JPG',
-     './src/images/photo(11).JPG',
-     './src/images/photo(12).JPG',
-     './src/images/photo(14).JPG',
-     './src/images/photo(16).JPG',
-     './src/images/photo(17).JPG',
-     './src/images/photo(18).JPG',
-     './src/images/photo(19).JPG',
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13
   ];
 
   return (

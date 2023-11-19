@@ -49,7 +49,7 @@ const Photo = () => {
           </div>
  
         {/* Photos */}
-           <div className='h-4/5 w-full flex flex-col justify-center items-center'> 
+           <div className='h-4/5 border w-full flex flex-col justify-center items-center'> 
               <div className='w-full h-5/6 flex items-center'>
                 <div className='flex justify-center items-center h-full w-full'>
                   {slides.map((slide, index) => (
@@ -61,7 +61,7 @@ const Photo = () => {
                         sm: 100,
                       } }}
                       key={index}
-                      className="w-72 h-96 rounded-lg shadow-sm absolute cursor-pointer z-10"
+                      className="w-2/3 h-2/4 md:1/4  rounded-lg shadow-sm absolute cursor-pointer z-10"
                       style={{
                         backgroundImage: `url('${slide}')`,
                         backgroundSize: 'cover',

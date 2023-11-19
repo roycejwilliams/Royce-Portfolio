@@ -18,6 +18,9 @@ import toolsImg4 from '/public/images/figma.png'
 import toolsImg5 from '/public/images/adobe.png'
 import toolsImg6 from '/public/images/nextjs.png'
 
+
+
+
 const Grid = () => {
 
   /*playlist carousel*/

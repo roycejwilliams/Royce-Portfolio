@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import image1 from '../images/LEMA-website-portfolio.jpg';
 import image2 from '../images/wigroup-portfolio.jpg'; 
 import image3 from '../images/revital-reflections.png';
-import image4 from '../images/TXEA-Seal.jpg';
+import image4 from '../images/TXEA-seal.jpg';
 import video1 from '../videos/revital-preview.mp4';
 import image5 from '../images/Oni-Real-Estate.png';
 import image6 from '../images/a2d.jpg';

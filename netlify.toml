@@ -2,7 +2,7 @@
 [build]
   command = "vite build"
   functions = "netlify/functions"
-  publish = "src"
+  publish = "./src"
 
 [build.environment]
   NODE_VERSION = "14" 

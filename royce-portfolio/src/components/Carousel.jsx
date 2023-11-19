@@ -51,6 +51,7 @@ const Carousel = () => {
                   autoPlay
                   loop
                   muted
+                  playsInline
                 >
                   <source src={slide} type='video/mp4' />
                   Your browser does not support the video tag.

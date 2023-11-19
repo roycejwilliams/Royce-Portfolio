@@ -56,7 +56,7 @@ const Bio = () => {
             </div>
           </div>
           <div className='w-full lg:w-1/2  h-full flex justify-center items-center'>
-            <div className='w-full h-1/2 md:h-5/6 flex flex-col border p-4 lg:justify-evenly md:justify-end items-center'>
+            <div className='w-full h-1/2 md:h-5/6 flex flex-col  p-4 lg:justify-evenly md:justify-end items-center'>
               <div className='w-full lg:w-3/4 lg:h-28 text-black md:mt-4 font-azeret'> 
                 <h1 className=' w-full text-lg md:text-4xl '>
                   <div className='w-4 h-4 text-sm flex items-center justify-center border-black border rounded-full'>1</div> Design</h1>

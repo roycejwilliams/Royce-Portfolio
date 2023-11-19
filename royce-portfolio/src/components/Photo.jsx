@@ -49,7 +49,7 @@ const Photo = () => {
           </div>
  
         {/* Photos */}
-           <div className='h-4/5 border w-full flex flex-col justify-center items-center'> 
+           <div className='h-4/5 w-full flex flex-col justify-center items-center'> 
               <div className='w-full h-5/6 flex items-center'>
                 <div className='flex justify-center items-center h-full w-full'>
                   {slides.map((slide, index) => (

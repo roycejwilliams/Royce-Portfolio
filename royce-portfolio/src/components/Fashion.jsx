@@ -36,7 +36,7 @@ const Fashion = () => {
     <div className='-mb-1'>
         <div className='h-screen w-full bg-black flex items-center'>
             <div className='w-1/6 h-full flex items-end justify-center'>
-              <div className='w-16 h-4/6 bg-rosered flex  flex-col items-center justify-center'>
+              <div className='w-16 h-4/6 bg-rosered flex flex-col items-center justify-center'>
                         <h2 className='uppercase font-clash text-5xl text-white'>G</h2>
                         <h2 className='uppercase font-clash text-5xl text-white'>A</h2>
                         <h2 className='uppercase font-clash text-5xl text-white'>R</h2>
@@ -52,8 +52,8 @@ const Fashion = () => {
                     DUVERNAY
                   </a>  later who knows.<br></br><br></br>Here Are Some of the Labels I Admire: </p>
             </div>
-            <div className='lg:w-3/6 lg:h-full w-full h-full flex justify-center items-center'>
-                <div className='lg:h-full h-1/2 border mx-auto max-w-md flex flex-col flex-wrap justify-center items-center gap-4 hover:scale-110 transition duration-100'>
+            <div className='lg:w-3/6 lg:h-full w-5/6 h-full flex justify-center items-center'>
+                <div className='lg:h-full h-1/2 mx-auto w-full flex flex-col flex-wrap justify-center items-center gap-4 lg:hover:scale-110 transition duration-100'>
                         {fashion.map((fashionFile, index) => (
                           <a href={href[index]} key={index} target="_blank" rel="noopener noreferrer">
                               <div className='lg:w-52 lg:h-48 w-28 h-24 rounded-xl'  

@@ -107,11 +107,11 @@ const Grid = () => {
       <div className='bg-rosered h-screen w-full flex justify-center items-center -mb-1'>
         <div className='w-full md:w-5/6 h-5/6 grid grid-cols-1 gap-y-2 sm:grid-cols-3 md:gap-x-2 md:gap-y-3 '>
               {/* Skills */}
-              <div className='bg-gradient-to-b flex-col from-black via-black/70 to-white/20 col-span-2 rounded-lg shadow-xl backdrop-blur md:row-span-3 border md:w-none  md:h-none flex w-full h-full'>
+              <div className='bg-gradient-to-b flex-col from-black via-black/70 to-white/20 col-span-3 rounded-lg shadow-xl backdrop-blur xl:col-span-2 xl:row-span-3 border md:w-none  md:h-none flex w-full h-full'>
                   <div className='w-full h-1/5 flex items-center'>
                     <h2 className='uppercase text-lg lg:text-3xl font-clash tracking-widest ml-4 font-bold text-white'>Skills</h2>
                   </div>
-                <ul className=' w-5/6 lg:h-5/6 font-azeret text-white flex flex-col  max-gap-y-2 md:gap-y-8 lg:gap-y-4 text-sm uppercase ml-4'>
+                <ul className=' w-5/6 lg:h-5/6 font-azeret text-white flex flex-col  max-gap-y-2 md:gap-y-4 lg:gap-y-3 text-sm uppercase ml-4'>
                   <li className="flex items-center text-xs md:text-sm"><span>UX/UI</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
                   <li className="flex items-center text-xs md:text-sm"><span>Branding</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
                   <li className="flex items-center text-xs md:text-sm"><span>Marketing</span><hr className="flex-grow border-t border-gray-300 ml-2" /></li>
@@ -122,12 +122,12 @@ const Grid = () => {
                 </ul>
               </div>
               {/* Social Media */}
-              <div className='bg-black rounded-lg shadow-xl w-full h-auto col-span-2 sm:col-span-1'>
+              <div className='bg-black rounded-lg shadow-xl w-full h-auto col-span-3 xl:col-span-1'>
                 <div className='w-full h-1/3 flex items-center'>
                     <h2 className='uppercase text-sm lg:text-xl font-clash tracking-widest ml-4 font-bold text-white'>socials</h2>
                 </div>
                 <div className=' w-full flex items-center justify-center h-3/6 '>
-                    <ul className='w-full h-full mx-auto flex flex-wrap justify-center items-center gap-x-4 md:gap-2 '>
+                    <ul className='w-full h-full mx-auto flex flex-wrap justify-center md:justify-evenly items-center gap-x-4 md:gap-2 '>
                     {logoFiles.map((logo, index) => (
                         <a href={href[index]}>
                           <li 
@@ -143,12 +143,12 @@ const Grid = () => {
                 </div>
               </div>
               {/* Mission */}
-              <div className='bg-black rounded-lg shadow-xl flex flex-col col-span-2 sm:col-span-1 sm:row-span-2 xl:row-span-3 items-center justify-center w-full'>
+              <div className='bg-black rounded-lg shadow-xl flex flex-col col-span-3 xl:col-span-1 xl:row-span-3 items-center justify-center w-full'>
                   <div className='w-full h-full block'>
                     <div className='w-full h-1/3 flex items-center'>
                       <h2 className='uppercase text-sm lg:text-xl font-clash tracking-widest ml-4 font-bold text-white'>mission</h2>
                     </div>
-                      <p className='font-azeret text-xxxs text-white md:text-xs xl:text-fit ml-4 tracking-wider max-h-[100%]'>
+                      <p className='font-azeret text-xxs text-white md:text-xs xl:text-fit ml-4 tracking-wider max-h-[100%]'>
                           Actively contributing to initiatives that foster positive impacts. I engineer and cultivate sustainable products that transcend accessibility barriers. My longevity aiming to make a lasting, meaningful difference for all.
                       </p>
                   </div>
@@ -200,7 +200,7 @@ const Grid = () => {
                   </div>
               </div>
               {/* Tools */}
-              <div className='bg-black rounded-lg shadow-xl col-span-2 sm:col-span-3 flex justify-center items-center'>
+              <div className='bg-black rounded-lg shadow-xl col-span-3 flex justify-center items-center'>
                 <div className='flex justify-center w-1/2 h-full text-white items-center font-clash uppercase'>
                   <h2 className='text-xl lg:text-5xl font-bold tracking-widest'>tech stack</h2>
                 </div>

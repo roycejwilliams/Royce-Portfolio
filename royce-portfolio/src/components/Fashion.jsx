@@ -56,7 +56,7 @@ const Fashion = () => {
                 <div className='h-3/4 mx-auto  w-full flex flex-col flex-wrap justify-center items-center gap-y-2 transition duration-100'>
                         {fashion.map((fashionFile, index) => (
                           <a href={href[index]} key={index} target="_blank" rel="noopener noreferrer">
-                              <div className='md:w-52 md:h-48 w-28 h-40   rounded-xl'  
+                              <div className='md:w-40 md:h-52 w-28 h-40   rounded-xl'  
                                   style={{
                                       backgroundImage: `url('${fashionFile}')`,
                                       backgroundSize: 'cover',

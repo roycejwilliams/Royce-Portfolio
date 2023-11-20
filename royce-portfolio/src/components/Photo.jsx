@@ -37,7 +37,7 @@ const Photo = () => {
 
   return (
     
-    <div className='bg-rosered h-700 w-full flex flex-col overflow-hidden -mb-1'>
+    <div className='bg-rosered h-screen w-full flex flex-col overflow-hidden -mb-1'>
       {/* Title & Description */}
           <div className='w-full h-200 flex justify-center'>
               <div className='w-1/2 h-auto  flex items-center mt-4'>
@@ -49,19 +49,15 @@ const Photo = () => {
           </div>
  
         {/* Photos */}
-           <div className='h-4/5 w-full flex flex-col justify-center items-center'> 
-              <div className='w-full h-5/6 flex items-center'>
+           <div className='h-full w-full flex flex-col justify-center items-center'> 
+              <div className='w-full h-full  flex items-center'>
                 <div className='flex justify-center items-center h-full w-full'>
                   {slides.map((slide, index) => (
                     <motion.div
                       drag="x"
-                      dragConstraints={{ left: 0, right: { 
-                        lg: 300,
-                        md: 200,
-                        sm: 100,
-                      } }}
+                      dragConstraints={{ left: 0, right: 450}}
                       key={index}
-                      className="w-2/3 h-2/4 md:1/4  rounded-lg shadow-sm absolute cursor-pointer z-10"
+                      className="w-2/3 h-2/4 md:w-2/4 md:h-500 lg:w-1/3 rounded-lg shadow-sm absolute cursor-pointer z-10"
                       style={{
                         backgroundImage: `url('${slide}')`,
                         backgroundSize: 'cover',
@@ -75,7 +71,7 @@ const Photo = () => {
                 </div>
               </div>
                {/*swipe gestures  */}
-            <div className="relative w-full flex justify-center items-center h-1/6">
+            <div className="relative w-full flex justify-center items-center h-50">
               <div className="w-8 h-8 bg-gray-200 shadow-md shadow-black rounded-full absolute animate-swipe"></div>
             </div>
           </div> 

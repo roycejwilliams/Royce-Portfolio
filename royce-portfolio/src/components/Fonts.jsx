@@ -7,7 +7,7 @@ const Fonts = () => {
       <div className='h-screen bg-black w-full flex'>
         <div className='w-1/2 h-full flex flex-col  justify-center gap-y-4 font-clash text-white'>
           <div className='lg:w-5/6 lg:h-1/6  ml-4 flex flex-col justify-center'>
-            <h1 className='text-3xl lg:text-5xl uppercase bg-rosered w-auto h-auto'>Typefaces</h1>
+            <h1 className='text-2xl md:text-5xl uppercase bg-rosered w-auto h-auto'>Typefaces</h1>
             <p className='font-azeret text-xxs lg:text-sm w-full'>A good font is essential.. it's all in the details.</p>
           </div>
         </div>

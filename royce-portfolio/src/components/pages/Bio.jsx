@@ -31,9 +31,9 @@ const Bio = () => {
                   {/* Bio */}
                   <p className='text-black font-clash p-4 font-regular text-xxs md:text-sm tracking-wider'>My journey began as a Biology major when I first entered college, but over the years, I shifted my focus towards tech. Design has always been a significant part of my upbringing. Growing up in New Orleans and later moving to Houston in my early years exposed me to diverse cultures and art, which greatly influenced my taste. These formative experiences led me to merge art and design, prompting me to change my major during my junior year (quite the pivot, I know).
                     <br></br><br></br>
-                    The knowledge and skills I acquired through both technology and art disciplines inspired me to seize the opportunity to help develop brands and foster a thriving community of sustainable businesses.  
+                    My knowledge in technology and art has equipped me with valuable knowledge and skills. This fusion of disciplines motivates me to contribute to brand development and nurture a vibrant community of sustainable businesses.  
                     <br></br><br></br>
-                    I believe that my wealth of experiences and keen attention to detail would be a valuable asset to any company seeking an experienced, self-taught designer and coder. <span className='font-medium underline'>I am actively seeking a full-time position as a new graduate in roles such as Front-End Developer, Product Designer, Project Manager, QA Analyst, or Internship Openings.</span> 
+                    I believe that my wealth of experiences and keen attention to detail would be a valuable asset to any company seeking an experienced, self-taught designer and coder. <span className='font-medium underline'>I am actively seeking a full-time position as a new graduate in roles such as Front-End Developer, Product Designer, Project Management, or Internship Openings.</span> 
                   </p>    
 
                   {/* Contact Button */}
@@ -64,7 +64,7 @@ const Bio = () => {
               </div>
               <div className='w-full lg:w-3/4 lg:h-28 text-black md:mt-4 font-azeret'>
                 <h1 className='w-full text-lg md:text-4xl '> <div className='w-4 h-4 text-sm flex items-center justify-center border-black border rounded-full'>2</div>  Development</h1>
-                <p className='text-xxs md:text-sm'>I specialize in developing scalable websites & software from the ground up, ensuring they seamlessly integrate with your companies vision.</p>
+                <p className='text-xxs md:text-sm'>I specialize in developing scalable websites & software from the ground up, ensuring they seamlessly integrate with your company's vision.</p>
               </div>
               <div className='w-full lg:w-3/4 lg:h-28 text-black md:mt-4 font-azeret'>
                 <h1 className='w-full text-lg md:text-4xl '>
@@ -77,7 +77,7 @@ const Bio = () => {
       </div>  
 
       {/* I build... */}
-      <div className=' w-full bg-gray-300 flex flex-col min-h-screen items-center justify-center font-bold text-white'>
+      <div className=' w-full bg-gray-300 flex flex-col h-700 items-center justify-center font-bold text-white'>
               <div className="text-center text-4xl md:text-6xl text-rosered font-clash font-regular">
               <Navbar /> Building..
                   <div className="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">

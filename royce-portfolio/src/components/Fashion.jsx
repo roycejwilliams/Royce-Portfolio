@@ -53,10 +53,10 @@ const Fashion = () => {
                   </a>  later who knows.<br></br><br></br>Here Are Some of the Labels I Admire: </p>
             </div>
             <div className='lg:w-3/6 lg:h-full w-5/6 h-full flex justify-center items-center'>
-                <div className='lg:h-full h-1/2 mx-auto w-full flex flex-col flex-wrap justify-center items-center gap-2 lg:hover:scale-110 transition duration-100'>
+                <div className='h-3/4 mx-auto  w-full flex flex-col flex-wrap justify-center items-center gap-y-2 transition duration-100'>
                         {fashion.map((fashionFile, index) => (
                           <a href={href[index]} key={index} target="_blank" rel="noopener noreferrer">
-                              <div className='lg:w-52 lg:h-48 w-28 h-24 rounded-xl'  
+                              <div className='md:w-52 md:h-48 w-28 h-40   rounded-xl'  
                                   style={{
                                       backgroundImage: `url('${fashionFile}')`,
                                       backgroundSize: 'cover',

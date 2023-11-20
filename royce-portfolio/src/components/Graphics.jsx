@@ -35,11 +35,11 @@ const Graphics = () => {
                     <h2 className='text-white text-xs font-azeret ml-4'> Prioritizing high-quality graphics can save time, especially for individuals like me who may struggle to fully articulate their ideas. Here are some graphics from all over the internet, it's a small batch of a larger sum but you get it </h2>
                 </div>
                 {/* Graphic */}
-                <div className='h-full w-auto flex items-center'>
-                    <div className='h-3/4  lg:h-full w-full lg:w-5/6 ml-4 flex flex-wrap gap-4 lg:gap-12'>
+                <div className='h-full w-auto  flex items-center'>
+                    <div className='h-3/4   md:h-full w-full lg:w-5/6 ml-4 flex flex-wrap gap-4 lg:gap-12'>
                         {graphics.map((graphicFile, index) => (
                             <div 
-                            className='lg:w-40 lg:h-56 w-20 h-32' 
+                            className='md:w-40 md:h-56 w-20 h-32' 
                             key={index}
                             style={{
                                 backgroundImage: `url('${graphicFile}')`,

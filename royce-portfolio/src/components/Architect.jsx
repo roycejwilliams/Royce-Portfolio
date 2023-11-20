@@ -39,10 +39,10 @@ const Architect = () => {
             </div>
             
                 <div className='w-5/6 lg:w-full h-4/5  flex justify-between'>
-                    <div className='lg:h-full w-full lg:w-1/2 lg:ml-4 h-5/6 flex gap-4'>
+                    <div className='md:h-full w-full lg:w-1/2 lg:ml-4 h-5/6 flex gap-4'>
                         {architect.map((artFile, index) => (
                             <a className='border' href={href[index]} key={index} target="_blank" rel="noopener noreferrer">
-                                <div className='lg:w-24 h-full w-14 '  
+                                <div className='md:w-24 h-full w-12 '  
                                     style={{
                                         backgroundImage: `url('${artFile}')`,
                                         backgroundSize: 'cover',

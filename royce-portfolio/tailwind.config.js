@@ -3,6 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
+      xs: "320px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -36,9 +37,11 @@ export default {
         xxs: "10px",
         xxxs: "8px",
         xxxl: "2.50rem",
+        fit: "1rem",
       },
       lineHeight: {
         xxxl: "2.5rem",
+        fit: "2.5rem",
       },
       fontWeight: {
         light: "200",

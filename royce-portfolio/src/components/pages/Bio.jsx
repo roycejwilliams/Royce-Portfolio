@@ -33,7 +33,7 @@ const Bio = () => {
                     <br></br><br></br>
                     My knowledge in technology and art has equipped me with valuable knowledge and skills. This fusion of disciplines motivates me to contribute to brand development and nurture a vibrant community of sustainable businesses.  
                     <br></br><br></br>
-                    I believe that my wealth of experiences and keen attention to detail would be a valuable asset to any company seeking an experienced, self-taught designer and coder. <span className='font-medium underline'>I am actively seeking a full-time position as a new graduate in roles such as Front-End Developer, Product Designer, Project Management, or Internship Openings.</span> 
+                    I believe that my wealth of experiences and keen attention to detail would be a valuable asset to any company seeking an experienced, self-taught designer and coder. <span className='font-medium underline'>I am actively seeking a full-time position in roles such as Front-End Developer, Product Designer, Project Management, or Internship Openings.</span> 
                   </p>    
 
                   {/* Contact Button */}

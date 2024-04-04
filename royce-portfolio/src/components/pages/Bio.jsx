@@ -18,9 +18,12 @@ const Bio = () => {
       <div className='bg-gray-300 w-full lg:h-700 h-700'>
         {/* Intro */}
         <div className='flex flex-col w-full justify-between items-center h-full '>
+          <div className='w-full h-1/5 flex justify-center'>
+          <Navbar /> 
+          </div>
           {/* Title */}
             <div className='w-full h-1/4 lg:h-2/4 flex flex-col justify-end lg:justify-center items-start'>
-              <div className='w-1/2 ml-4 h-auto flex flex-col '>
+              <div className='w-4/5 ml-4 h-auto flex flex-col '>
                 <h2 className='text-rosered text-3xl md:text-6xl font-clash'>Royce Williams</h2>
                 <p className='font-azeret text-xs md:text-sm text-black'>Computer Engineer & Founder of REVITAL</p>
               </div>
@@ -79,7 +82,7 @@ const Bio = () => {
       {/* I build... */}
       <div className=' w-full bg-gray-300 flex flex-col h-700 items-center justify-center font-bold text-white'>
               <div className="text-center text-4xl md:text-6xl text-rosered font-clash font-regular">
-              <Navbar /> Building..
+              Building..
                   <div className="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
                   <span className="animate-word col-span-full row-span-full">Brands</span>
                   <span className="animate-word-delay-1 col-span-full row-span-full">Communities</span>

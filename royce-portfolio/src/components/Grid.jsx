@@ -104,7 +104,7 @@ const Grid = () => {
         }, []);
 
   return (
-      <div className='bg-rosered h-screen w-full flex justify-center items-center -mb-1'>
+      <div className='bg-rosered h-screen w-full flex justify-center items-center'>
         <div className='w-full md:w-5/6 h-5/6 grid grid-cols-1 gap-y-2 sm:grid-cols-3 md:gap-x-2 md:gap-y-3 '>
               {/* Skills */}
               <div className='bg-gradient-to-b flex-col from-black via-black/70 to-white/20 col-span-3 rounded-lg shadow-xl backdrop-blur xl:col-span-2 xl:row-span-3 border md:w-none  md:h-none flex w-full h-full'>

@@ -50,7 +50,7 @@ const Photo = () => {
  
         {/* Photos */}
            <div className='h-full w-full flex flex-col justify-center items-center'> 
-              <div className='w-full h-full  flex items-center'>
+              <div className='w-full h-full  flex justify items-center'>
                 <div className='flex justify-center items-center h-full w-full'>
                   {slides.map((slide, index) => (
                     <motion.div
@@ -65,7 +65,7 @@ const Photo = () => {
                       }}
                     />
                   ))}
-                  <h3 className='text-white font-azeret uppercase font-medium tracking-widest text-center text-xxs md:text-xs w-3/6 h-fit absolute z-20'>
+                  <h3 className='text-white font-azeret uppercase font-medium tracking-widest text-center text-xxs md:text-xs w-3/6 h-fit absolute z-20 opacity-75'>
                     In my eyes the world is my reflection and perspective. It's so easy to get caught up in what's around you; you forget what really matters. The essence of being and paying attention is a directional signal. A signal that guides us towards a deeper understanding of life and our place in it. These qualities create a compass, helping us navigate through. Whatever it is, see it through.
                   </h3>
                 </div>

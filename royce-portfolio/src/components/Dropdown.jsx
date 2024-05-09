@@ -102,7 +102,7 @@ const Dropdown = () => {
             Austin
           </li>
           <li className="px-4 py-0.5 lg:py-1 text-xxs md:text-xs text-white tracking-widest">
-            Houston
+            San Francisco
           </li>
           <li className="px-4 py-0.5 lg:py-1 text-xxs md:text-xs text-white tracking-widest">
             Seattle
@@ -111,10 +111,10 @@ const Dropdown = () => {
             Chicago
           </li>
           <li className="px-4 py-0.5 lg:py-1 text-xxs md:text-xs text-white tracking-widest">
-            Washington D.C.
+            Sacramento
           </li>
           <li className="px-4 py-0.5 lg:py-1 text-xxs md:text-xs text-white tracking-widest">
-            New Orleans
+            Los Angeles
           </li>
           <li className="px-4 py-0.5 lg:py-1 text-xxs md:text-xs text-white tracking-widest font-bold">
             ANYWHERE, EVERYWHERE
